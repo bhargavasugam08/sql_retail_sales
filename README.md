@@ -22,17 +22,13 @@ The main goal of this project is to improve my understanding of SQL and how it i
 
 ---
 
-## Project Structure
-
 ### 1. Database Setup
 
-- A database named `sql_project_p1` is created.
-- A table named `retail_sales` is created to store sales data such as transaction details, customer information, product category, and sales amount.
+- A database named `sql_project_p1` is created
+- A table named `retail_sales` is created to store sales data
 
 ```sql
 CREATE DATABASE sql_project_p1;
-
-DROP TABLE IF EXISTS retail_sales;
 
 CREATE TABLE retail_sales 
 (
@@ -48,6 +44,7 @@ CREATE TABLE retail_sales
     cogs FLOAT,
     total_sale FLOAT
 );
+```
 
 ### 2. Data Exploration & Cleaning
 
@@ -73,7 +70,6 @@ WHERE
     gender IS NULL OR age IS NULL OR category IS NULL OR 
     quantity IS NULL OR price_per_unit IS NULL OR cogs IS NULL;
 ```
-
 ### 3. Data Analysis & Findings
 
 The following SQL queries were developed to answer specific business questions:
